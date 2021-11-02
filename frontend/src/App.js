@@ -4,7 +4,7 @@ import Item from './components/Item';
 function App() {
 	return (
 		<div>
-			Tere
+			Tere 2
 			<Item />
 			<Item />
 		</div>
