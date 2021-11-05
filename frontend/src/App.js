@@ -1,14 +1,22 @@
 import './App.css';
-import Item from './components/Item';
+import {Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
 
 function App() {
-	return (
-		<div>
-			Tere 2
-			<Item />
-			<Item />
-		</div>
-	);
+  return (
+    <div>
+      <Route path='/' exact>
+        <Home />
+      </Route>
+      <Route path='/cart'>
+        <Cart />
+      </Route>
+      <Route path='/add-item'>
+        <div>Add-item, mida pole veel valmis</div>
+      </Route>
+    </div>
+  );
 }
 
 export default App;
